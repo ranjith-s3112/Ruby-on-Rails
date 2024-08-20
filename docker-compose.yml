@@ -7,7 +7,7 @@ services:
     volumes:
       - ".:/myapp"
     ports:
-      - "4000:4000"
+      - "4500:4500"
     depends_on:
       - db
       - redis
