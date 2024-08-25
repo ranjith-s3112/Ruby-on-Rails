@@ -26,7 +26,7 @@ class PostsController < ApplicationController
 
     respond_to do |format|
       if @post.save
-        format.html { redirect_to post_url(@post), notice: "Your post will be deleted after 10 seconds." }
+        format.html { redirect_to post_url(@post), notice: "Your post will be deleted after 60 seconds." }
         format.json { render :show, status: :created, location: @post }
       else
         format.html { render :new, status: :unprocessable_entity }
